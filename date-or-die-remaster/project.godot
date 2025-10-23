@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="Date or Die Remaster"
+run/main_scene="uid://do8kpbxq7j6bk"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
