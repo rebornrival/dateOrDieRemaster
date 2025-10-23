@@ -1,10 +1,157 @@
-[gd_scene load_steps=3 format=3 uid="uid://do8kpbxq7j6bk"]
+[gd_scene load_steps=11 format=3 uid="uid://do8kpbxq7j6bk"]
 
 [ext_resource type="Texture2D" uid="uid://cewviquoe2ywl" path="res://assets/black.png" id="1_5jffm"]
+[ext_resource type="Script" uid="uid://bb6reu1hklve0" path="res://scenes/button.gd" id="2_x1kem"]
+[ext_resource type="Script" uid="uid://dnq10c3isdnv2" path="res://scenes/label.gd" id="3_8byya"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_5jffm"]
+[sub_resource type="LabelSettings" id="LabelSettings_x1kem"]
+font_size = 40
+font_color = Color(1, 1, 1, 0)
+
+[sub_resource type="Animation" id="Animation_8byya"]
+resource_name = "tween"
+length = 15.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:label_settings:font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:label_settings:font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label2:label_settings:font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(6, 9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label3:label_settings:font_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(9, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Button:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(12, 15),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_1wrf5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:label_settings:font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:label_settings:font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label2:label_settings:font_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label3:label_settings:font_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Button:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6e114"]
+_data = {
+&"RESET": SubResource("Animation_1wrf5"),
+&"tween": SubResource("Animation_8byya")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_f8hlv"]
 font_size = 25
-shadow_color = Color(0.80168915, 0.15138358, 0.320114, 0)
+font_color = Color(1, 1, 1, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8byya"]
+font_size = 25
+font_color = Color(1, 1, 1, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1wrf5"]
+font_size = 25
+font_color = Color(1, 1, 1, 0)
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,22 +160,62 @@ position = Vector2(575, 333.875)
 scale = Vector2(5.6533327, 3.2077777)
 texture = ExtResource("1_5jffm")
 
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 491.0
+offset_top = 483.0
+offset_right = 645.0
+offset_bottom = 579.0
+text = "Start"
+script = ExtResource("2_x1kem")
+
 [node name="Label" type="Label" parent="."]
-offset_left = 48.0
-offset_top = 52.0
-offset_right = 1110.0
-offset_bottom = 239.0
+offset_left = -27.0
+offset_top = 86.0
+offset_right = 1168.0
+offset_bottom = 199.0
 text = "You are Eugene.
-You have had enough with your brain constantly telling you that you'll be lonely forever.
-You decide to take matters into your own hands and attempt to fix this.
-You will die if you do not get a date by the end of the weekend. \"
 "
-label_settings = SubResource("LabelSettings_5jffm")
+label_settings = SubResource("LabelSettings_x1kem")
+horizontal_alignment = 1
+script = ExtResource("3_8byya")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
+libraries = {
+&"": SubResource("AnimationLibrary_6e114")
+}
+autoplay = "tween"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 118.0
+offset_right = 1143.0
+offset_bottom = 220.0
+text = "You have had enough with your brain constantly telling you that you'll be lonely forever.
+"
+label_settings = SubResource("LabelSettings_f8hlv")
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="."]
-offset_left = 498.0
-offset_top = 416.0
-offset_right = 652.0
-offset_bottom = 536.0
-text = "Start"
+[node name="Label2" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 200.0
+offset_right = 1029.0
+offset_bottom = 273.0
+text = "You decide to take matters into your own hands and attempt to fix this.
+"
+label_settings = SubResource("LabelSettings_8byya")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 212.0
+offset_top = 295.0
+offset_right = 976.0
+offset_bottom = 330.0
+text = "You will die if you do not get a date by the end of the weekend. "
+label_settings = SubResource("LabelSettings_1wrf5")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
