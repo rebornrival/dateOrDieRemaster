@@ -14,3 +14,7 @@ config/name="Date or Die Remaster"
 run/main_scene="uid://do8kpbxq7j6bk"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Globals="*res://scripts/globals.gd"

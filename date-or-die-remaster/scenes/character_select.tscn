@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://bk1k0x2dcustc"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_top = 471.0
+offset_right = 1153.0
+offset_bottom = 648.0
+placeholder_text = "i think it could be cool for character select to type in the names of who you want to be and their attributes, instead of arrows."
