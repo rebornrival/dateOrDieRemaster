@@ -14,5 +14,5 @@ func _physics_process(delta: float) -> void:
 		$toddrick/AnimationPlayer.play("tween")
 		eugene_run = true
 
-func _on_pressed() -> void:
+func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/character_select.tscn")

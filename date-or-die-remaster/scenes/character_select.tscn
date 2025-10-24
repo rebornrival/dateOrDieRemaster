@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://bk1k0x2dcustc"]
+[gd_scene load_steps=3 format=3 uid="uid://bk1k0x2dcustc"]
+
+[ext_resource type="Texture2D" uid="uid://djc4jndwo1c76" path="res://assets/toddrick.png" id="1_jgus3"]
+[ext_resource type="Texture2D" uid="uid://b8m551bieaiok" path="res://assets/eugene.png" id="2_bow2h"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -6,4 +9,43 @@
 offset_top = 471.0
 offset_right = 1153.0
 offset_bottom = 648.0
-placeholder_text = "i think it could be cool for character select to type in the names of who you want to be and their attributes, instead of arrows."
+theme_override_font_sizes/font_size = 58
+placeholder_text = "Choose your character! "
+editable = false
+
+[node name="pickEugene" type="TextEdit" parent="."]
+offset_left = 112.0
+offset_top = 78.0
+offset_right = 367.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 27
+
+[node name="Label" type="Label" parent="pickEugene"]
+modulate = Color(1, 1, 1, 0.60784316)
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.5
+offset_right = 257.0
+offset_bottom = 54.5
+theme_override_colors/font_color = Color(0.1764706, 1, 1, 1)
+theme_override_font_sizes/font_size = 27
+text = "Eugene"
+
+[node name="pickToddrick" type="TextEdit" parent="."]
+offset_left = 714.0
+offset_top = 78.0
+offset_right = 969.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 27
+
+[node name="Toddrick" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(862, 289)
+scale = Vector2(9.765627, 10.781249)
+texture = ExtResource("1_jgus3")
+
+[node name="Eugene" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(226.25, 281.75)
+scale = Vector2(7.921875, 9.046876)
+texture = ExtResource("2_bow2h")
