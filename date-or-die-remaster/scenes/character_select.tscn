@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk1k0x2dcustc"]
+[gd_scene load_steps=4 format=3 uid="uid://bk1k0x2dcustc"]
 
+[ext_resource type="Script" uid="uid://c6s0xeckys0s" path="res://scripts/character_select.gd" id="1_bow2h"]
 [ext_resource type="Texture2D" uid="uid://djc4jndwo1c76" path="res://assets/toddrick.png" id="1_jgus3"]
 [ext_resource type="Texture2D" uid="uid://b8m551bieaiok" path="res://assets/eugene.png" id="2_bow2h"]
 
-[node name="Node2D" type="Node2D"]
+[node name="character_select" type="Node2D"]
+script = ExtResource("1_bow2h")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_top = 471.0
@@ -37,6 +39,16 @@ offset_top = 78.0
 offset_right = 969.0
 offset_bottom = 128.0
 theme_override_font_sizes/font_size = 27
+
+[node name="Label" type="Label" parent="pickToddrick"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 5.5
+offset_right = 260.0
+offset_bottom = 55.5
+theme_override_colors/font_color = Color(0.9118643, 0.47544938, 0.6717122, 1)
+theme_override_font_sizes/font_size = 27
+text = "Toddrick"
 
 [node name="Toddrick" type="Sprite2D" parent="."]
 texture_filter = 1
